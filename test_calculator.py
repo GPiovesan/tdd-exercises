@@ -18,3 +18,12 @@ class TestCalculatorOperators(unittest.TestCase):
     def test_multiply_two_values(self):
         """Multiply the numbers and return the result"""
         assert calculator.multiply(4, 2) == 8
+
+    def test_sum_list_of_values(self):
+        """Sum a list of values and return the result"""
+        values = [0, 1, 2, 3, 4]
+        assert calculator.sum_list(values) == 10
+
+    def test_max_value(self):
+        values = [0, 1, 2, 3, 4, 10]
+        assert calculator.max_value(values) == 10
